@@ -1,0 +1,18 @@
+<div  infinite-scroll
+     [infiniteScrollDistance]="scrollDistance"
+     [infiniteScrollThrottle]="throttle"
+     (scrolled)="onScrollDown()">
+  <div *ngFor="let item of  newsService.newsCar">
+    <div class="wrapper"  (click)="goToNews(item)">
+      <div>
+        <img src="{{item.img}}"/>
+      </div>
+      <div>
+        <h2>{{item.nameNews}}</h2>
+        <p>{{item.text}}</p>
+        <p>{{item.date}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>

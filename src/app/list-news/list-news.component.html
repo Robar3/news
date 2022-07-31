@@ -1,0 +1,4 @@
+
+<button class="buttonAddNews translation button" (click)="openModal()">Добавить новость</button>
+<app-modal-add-news *ngIf="newsService.isOpen" class="modalAddNews"></app-modal-add-news>
+<app-form-news></app-form-news>

@@ -1,0 +1,40 @@
+<form class="decor formInfo" [formGroup]="infoForm">
+  <div class="form-left-decoration"></div>
+  <div class="form-right-decoration"></div>
+  <div class="circle"></div>
+  <div class="form-inner">
+    <h3>Добавить новость</h3>
+    <div class="field">
+      <label for="nameNews">Название</label>
+      <input id="nameNews" type="text" formControlName="nameNews" />
+      <div
+           *ngIf="infoForm.controls['nameNews'].invalid && infoForm.controls['nameNews'].touched">
+        Не указано имя
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="imgNews">Фото</label>
+      <input id="imgNews" type="file" formControlName="imgNews" (change)="uploadImage($event)"/>
+      <div
+        *ngIf="infoForm.controls['imgNews'].invalid && infoForm.controls['imgNews'].touched">
+        Не добафленно фото
+      </div>
+    </div>
+    <div class="field">
+      <label for="text">Описание</label>
+      <input id="text" type="text" formControlName="text" />
+      <div
+        *ngIf="infoForm.controls['text'].invalid && infoForm.controls['text'].touched">
+        Не добафленно описание новости
+      </div>
+    </div>
+
+    <div class="field">
+      <button type="button" class="button translation" [disabled]="!infoForm.valid"(click)="onSubmit()">Сохранить</button>
+    </div>
+    <div class="field">
+      <button type="button" class="button translation" (click)="exit()">Закрыть</button>
+    </div>
+  </div>
+</form>

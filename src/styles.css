@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  background-color: #dddddd;
+  border: solid black 1px;
+  border-radius: 10%;
+  transition: 1s;
+}
+.button:hover{
+  background-color: #f69a73;
+}
+.translation{
+
+  transition: 1s;
+}

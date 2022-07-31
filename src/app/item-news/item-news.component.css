@@ -1,0 +1,15 @@
+.itemHeader {
+  margin-bottom: 0.5vh; }
+
+.itemCategory {
+  margin-bottom: 0.5vh; }
+
+.itemDate {
+  margin-bottom: 0.5vh; }
+
+.photo {
+  height: 50px;
+  width: 50px;
+  background-color: red; }
+
+/*# sourceMappingURL=item-news.component.css.map */

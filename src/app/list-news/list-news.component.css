@@ -1,0 +1,10 @@
+.buttonAddNews {
+  position: fixed;
+  top: 10vh;
+  z-index: 5; }
+
+.modalAddNews {
+  position: fixed;
+  left: 10vw; }
+
+/*# sourceMappingURL=list-news.component.css.map */
